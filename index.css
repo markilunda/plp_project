@@ -1,34 +1,303 @@
-/* Search Bar */
-.search-bar {
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #003366;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    margin: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    margin-top: 20px;
+    text-align: center;
 }
 
 .search-bar input {
     padding: 10px;
     width: 300px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .search-bar button {
-    padding: 10px;
-    background-color: #333;
+    padding: 10px 20px;
+    background-color: #003366;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Testimonials */
+.search-bar button:hover {
+    background-color: #f0a500;
+}
+
+/* About Us Section */
+#about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Products Section */
+#products {
+    padding: 50px;
+    background-color: #e9ecef;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
 .testimonials {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .testimonial {
-    background-color: #f4f4f4;
+    background-color: #e9ecef;
     padding: 20px;
-    
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+/* FAQ Section */
+#faq {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* Newsletter Section */
+#newsletter {
+    padding: 50px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+}
+
+#newsletter form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#newsletter input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: white;
+    color: #003366;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #fff;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #f0a500;
+}
+
+/* Map */
+#map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Login Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
 }
