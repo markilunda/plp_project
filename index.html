@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaCorp - Leading Pharmaceutical Company</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to PharmaCorp</h1>
+            <p>Your trusted partner in healthcare solutions.</p>
+        </div>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>PharmaCorp is a leader in innovative healthcare solutions, dedicated to improving the lives of millions.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <h3>Product 1</h3>
+                <p>Description of the product...</p>
+            </div>
+            <!-- More products here -->
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"PharmaCorp has transformed our healthcare services!" - Client 1</p>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing quality and excellent customer support." - Client 2</p>
+            </div>
+            <!-- More testimonials -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What are the delivery options?</h3>
+            <p>We offer multiple delivery options including standard and express shipping.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do you offer international shipping?</h3>
+            <p>Yes, we ship to many countries across the globe.</p>
+        </div>
+        <!-- More FAQs -->
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form action="subscribe.php" method="POST">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submitForm.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <!-- Map Integration -->
+        <div id="map">
+            <!-- Map iframe (Google Maps) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=..."
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 PharmaCorp. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
